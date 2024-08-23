@@ -43,3 +43,18 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+const mediaIcons = document.querySelector('.media-icons');
+const icons = mediaIcons.querySelectorAll('a');
+
+const socialMediaLinks = Array.from(icons).map(icon => icon.href);
+
+console.log(socialMediaLinks);
+const button = document.querySelector('.button button');
+
+button.addEventListener('click', () => {
+  const cvFile = 'https://github.com/Akasha0510/username.github.io/blob/main/portfilo/your_cv.pdf.pdf';
+  const link = document.createElement('a');
+  link.href = cvFile;
+  link.download = 'your_cv.pdf'; 
+  link.click();
+});
