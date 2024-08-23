@@ -255,7 +255,7 @@ section .button button:hover{
 
  /* My Skills CSS */
  .skills{
-   background: #F0F8FF;
+   background: #f0f8ff;
  }
  .skills .content{
    padding: 40px 0;
@@ -306,10 +306,31 @@ section .button button:hover{
   font-size: 60px;
   color: #4070f4;
 }
+/* Intership CSS */
+.intership {
+  background-color: #f7f7f7;
+}
+.intership .content{
+  padding: 40px;
+}
+.intership .intership-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intership-details .text{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.intership-details p{
+  color: #0E2431;
+  text-align: justify;
+}
 
 /* Contact Me CSS */
 .contact{
-  background: #F0F8FF;
+  background: #F0F8FF; 
 }
 .contact .content{
   margin: 0 auto;
@@ -446,6 +467,16 @@ footer .text span a:hover{
     margin: 20px 0;
     width: 100%;
   }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .intership-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+ 
   .contact .text{
     width: 100%;
 }
